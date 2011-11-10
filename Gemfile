@@ -4,7 +4,6 @@ gem 'rails',          '3.1.1'
 
 # Using Thin as webserver
 gem 'thin',           '~> 1.2.11'
-gem "therubyracer",   '~> 0.9.9'  # may not be needed
 gem 'heroku'
 gem 'bcrypt-ruby',    '~> 3.0.0'
 gem 'jquery-rails',   '~> 1.0.17'
@@ -16,6 +15,9 @@ group :production do
 end
 group :development, :test do
   gem 'sqlite3'
+  # using ruby racer to address an error on scott's machine
+  # when trying to run the server locally -- may not be needed
+  gem "therubyracer",   '~> 0.9.9'
   gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
