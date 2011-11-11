@@ -7,6 +7,7 @@ gem 'thin',           '~> 1.2.11'
 gem 'heroku'
 gem 'bcrypt-ruby',    '~> 3.0.0'
 gem 'jquery-rails',   '~> 1.0.17'
+gem 'devise'
 
 # PostgreSQL for production
 # sqlite3 for dev & testing
