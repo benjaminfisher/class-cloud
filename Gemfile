@@ -3,10 +3,11 @@ source 'http://rubygems.org'
 gem 'rails',          '3.1.1'
 
 # Using Thin as webserver
-gem 'thin',           '~> 1.2.11'
-gem 'bcrypt-ruby',    '~> 3.0.0'
-gem 'jquery-rails',   '~> 1.0.17'
-gem 'devise',         '~> 1.4.9'
+gem 'thin',                   '~> 1.2.11'
+gem 'bcrypt-ruby',            '~> 3.0.0'
+gem 'jquery-rails',           '~> 1.0.17'
+gem 'devise',                 '~> 1.4.9'
+gem 'validates_timeliness',   '~> 3.0.7'
 
 # PostgreSQL for production
 # sqlite3 for dev & testing

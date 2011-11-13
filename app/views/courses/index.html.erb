@@ -1,0 +1,9 @@
+<% title "Courses List" %>
+
+<h3><%= yield(:title) %></h3>
+
+<%= link_to "Create Course", new_course_path %><br /><br />
+
+<% @courses.each do |course| %>
+  <%= link_to course.name, course_path(course) %>
+<% end %>

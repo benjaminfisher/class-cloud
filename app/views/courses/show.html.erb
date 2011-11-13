@@ -1,0 +1,15 @@
+<% title "Show Course #{@course.name}" %>
+
+<h3><%= yield(:title) %></h3>
+
+Name: <%= @course.name %><br />
+Code: <%= @course.code %><br />
+Description: <%= @course.description %><br />
+Start Date: <%= @course.start_date %><br />
+End Date: <%= @course.end_date %><br />
+
+<h4>Users associated:</h4>
+
+<% @course.users.each do |user| %>
+  <%= link_to user.name, users_path(user) %>
+<% end %>
